@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+}
+h2{
+  color:red;
+  font-size: 30px;
+  font-style: italic;
+}
+h3{
+  color:blue;
+}
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.card {
+  background-color:white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.p{
+  text-align: justify;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+body{
+  background-color: white
+}
+.row {
+    display: flex;
+  } 
+  .column {
+    flex: 200;
+    padding: 100px;
+  }
+  .column {
+    float: center;
+    width: 100%;
+    padding: 20px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  p{
+    font-style: arial;
+  }
+  
+  table, th, td {
+    border: 5px solid black;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom:1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-spacing: 2px;
+  }
+  td:nth-child(even), th:nth-child(even) {
+    background-color: red;
+  }
+
+  td:nth-child(odd),th:nth-child(odd) {
+    background-color:greenyellow;
+  }
+  div.scroll-container {
+    background-color:white;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
+
+  p{
+    font-size: 20px;
+    text-align: justify;
+  }
